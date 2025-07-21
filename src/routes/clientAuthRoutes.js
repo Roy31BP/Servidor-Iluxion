@@ -1,5 +1,5 @@
 const express = require('express');
-const protectRoutes = require('../Middleware/protectRoutes');
+const protectRoutes = require('../middleware/protectRoutes');
 
 const { registerClient, loginClient, logoutClient,getClientProfile, updateClientProfile, deleteClient } = require('../controllers/clientAuthController');
 const uploadMiddleware = require('../middleware/uploadMiddleware');

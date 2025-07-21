@@ -6,7 +6,7 @@ const {
   updateOrder, 
   deleteOrder 
 } = require("../controllers/orderController");
-const protectRoutes = require('../Middleware/protectRoutes');
+const protectRoutes = require('../middleware/protectRoutes');
 
   
 const router = express.Router();
