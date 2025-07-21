@@ -27,7 +27,7 @@ const loginAdmin = async (req, res) => {
         _id: admin._id,
         email: admin.email,
         role: admin.role,
-        name: admin.name, // agrega más campos si quieres
+        username: admin.username, // agrega más campos si quieres
       }
     });
   } catch (error) {
