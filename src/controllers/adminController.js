@@ -32,7 +32,7 @@ const createAdmin = async (req, res) => {
 // Listar todos los usuarios sin contraseñas
 const listAdmins = async (req, res) => {
   try {
-    const users = await Admin.find().select("-password");
+    const users = await Admin.find(); // Ahora incluye la contraseña
     res.json(users);
   } catch (error) {
     res.status(500).json({ message: error.message });
