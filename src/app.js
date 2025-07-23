@@ -6,7 +6,7 @@ const path = require("path");
 const app = express();
 
 // Lista de orígenes permitidos
-const allowedOrigins = ['http://localhost:5174', 'http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5174', 'http://localhost:5173', 'https://iluxion-clientes.onrender.com'];
 // Configuración de CORS
 
 
