@@ -4,7 +4,7 @@ const {
   getOrder, 
   getSingleOrder, 
   updateOrder, 
-  deleteOrder 
+  deleteOrder,
 } = require("../controllers/orderController");
 const protectRoutes = require('../middleware/protectRoutes');
 
