@@ -4,7 +4,7 @@ const Order = require('../models/adminOrderModel');
 // GET /api/admin/orders
 const getAllOrders = asyncHandler(async (req, res) => {
   const orders = await Order.find({})
-    .select('totalPrice paymentMethod _id user shippingAddress orderItems');
+    .select('totalPrice paymentMethod _id user shippingAddress orderItems isPaid createdAt');
 
   res.status(200).json({
     success: true,
